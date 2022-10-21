@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tesla Coil</title>
+</head>
+
+<body>
+  <div style="float:left;width:100%;height:3vh;"></div>
+  <div class="container">
+    <form id="form" class="form">
+      <h2>螺线管线圈设计</h2>
+      <div class="form-control">
+        <label for="xqzj">线圈直径 单位（mm）</label>
+        <input type="number" id="xqzj" placeholder="输入线圈直径" />
+      </div>
+      <div class="form-control">
+        <label for="xqzs">线圈匝数 单位（ T ）</label>
+        <input type="number" id="xqzs" placeholder="输入线圈匝数" />
+      </div>
+      <div class="form-control">
+        <label for="rxzj">绕线直径 单位（mm）</label>
+        <input type="number" id="rxzj" placeholder="输入绕线直径" />
+      </div>
+      <div class="form-control">
+        <label for="zjj">匝间距 单位（mm）</label>
+        <input type="number" id="zjj" placeholder="输入匝间距" />
+      </div>
+      <button type="button" onclick="jisuan()">计算</button>
+    </form>
+  </div>
+
+  <div style="float:left;width:100%;height:3vh;"></div>
+  <div class="container" style="text-align: center;">
+    <div style="float:left;width:100%;height:3vh;"></div>
+    <h2>螺线管线圈参数</h2>
+    <div>
+      <span style="margin-left: 10px;" id="xqgd">线圈高度:</span>
+      <span style="margin-right: 10px;" id="rxcd">绕线长度:</span>
+    </div>
+    <div>
+      <span style="margin-left: 10px;" id="zldz">直流电阻:</span>
+      <span style="margin-right: 10px;" id="pzys">品质因数:</span>
+    </div>
+    <div>
+      <span style="margin-left: 10px;" id="xqdg">线圈电感:</span>
+      <span style="margin-right: 10px;" id="jsdr">寄生电容:</span>
+    </div>
+    <div>
+      <span style="margin-left: 10px;" id="xzpl">谐振频率:</span>
+      <span style="margin-right: 10px;" id="xzzk">谐振阻抗:</span>
+    </div>
+    <div style="float:left;width:100%;height:3vh;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
