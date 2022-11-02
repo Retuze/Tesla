@@ -4,7 +4,7 @@ var e0 = 8.854187817;//真空介电常数
 var p = 18.15;//常温铜电阻率
 function jisuan() {
     var DE = document.getElementById('xqzj');
-    var NE = document.getElementById('xqzs');
+    var NE = document.getElementById('rxzs');
     var WE = document.getElementById('rxzj');
     var SE = document.getElementById('zjj');
 
@@ -57,13 +57,13 @@ function jisuan() {
     //品质因数
     QValue = XlValue/ResValue;
 
-    H.innerText = "线圈高度: " + HighValue.toFixed(4) + " mm";
-    L.innerText = "绕线长度: " + LengthValue.toFixed(4) + "  m";
-    Q.innerText = "品质因数: " + QValue.toFixed(4) ;
-    Loop.innerText = "线圈电感: " + LoopValue.toFixed(4) + " uH";
-    Cap.innerText = "寄生电容: " + CapValue.toFixed(4) + " pF";
-    Res.innerText = "直流电阻: " + ResValue.toFixed(4) + " ohm";
-    Xl.innerText = "谐振阻抗: " + XlValue.toFixed(4) + " ohm";
+    H.innerText = "线圈高度: " + HighValue.toFixed(3) + " mm";
+    L.innerText = "绕线长度: " + LengthValue.toFixed(2) + "  m";
+    Q.innerText = "品质因数: " + QValue.toFixed(0) ;
+    Loop.innerText = "线圈电感: " + LoopValue.toFixed(2) + " uH";
+    Cap.innerText = "寄生电容: " + CapValue.toFixed(2) + " pF";
+    Res.innerText = "直流电阻: " + ResValue.toFixed(2) + " ohm";
+    Xl.innerText = "谐振阻抗: " + XlValue.toFixed(0) + " ohm";
     Freq.innerText = "谐振频率: " + FreqValue.toFixed(4) + " MHz";
 }
 
